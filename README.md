@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 ![My Network Diagram](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Images/My%20Network%20Diagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml playbook file may be used to install only certain pieces of it, such as Filebeat.
-We will need [filebeat-playbook.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible-Playbooks/filebeat-playbook.yml) and [elk.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible-Playbooks/elk.yml) to create the Elk-Server.
+We will need [filebeat-playbook.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible-Playbooks/filebeat-playbook.yml) and [elk.yml (https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible-Playbooks/elk.yml) to create the Elk-Server.
 
 
 This document contains the following details:
@@ -65,7 +65,7 @@ The playbook implements the following tasks:
 *  Open a browser window and type in the address bar [Public IP of ELK-Server:5601].
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![Docker PS](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/raw/master/Elk%20Stack%20Project/Images/Docker_ps.jpg)
+![Docker PS](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Images/Docker_ps.jpg)
 
 
 ### Target Machines & Beats
@@ -90,9 +90,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-*  Copy the [filebeat.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible%20Configuration%20Files/filebeat.yml) and [metricbeat.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible%20Configuration%20Files/metricbeat.yml) to the /etc/ansible/roles/files directory.
+*  Copy the [filebeat.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible%20Configuration%20Files/filebeat.yml) and [metricbeat.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible%20Configuration%20Files/metricbeat.yml) to the /etc/ansible/roles/files directory.
 *  Update the configuration files with the private IP of the ELK-Server to the Kibana and Elasticsearch sections of the file.
-*  Create a new ansible-playbook [filebeat-playbook.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible-Playbooks/filebeat-playbook.yml) in the /etc/ansible/roles directory. This playbook will install, drop in the [filebeat.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible%20Configuration%20Files/filebeat.yml) and [metricbeat.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible%20Configuration%20Files/metricbeat.yml) from the /etc/ansible/roles/files directory, update the configuration files, and start the services for both.
+*  Create a new ansible-playbook [filebeat-playbook.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible-Playbooks/filebeat-playbook.yml) in the /etc/ansible/roles directory. This playbook will install, drop in the [filebeat.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible%20Configuration%20Files/filebeat.yml) and [metricbeat.yml](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Ansible%20Configuration%20Files/metricbeat.yml) from the /etc/ansible/roles/files directory, update the configuration files, and start the services for both.
 *  Run the playbook and SSH back into the ELK-Server to check that the installation worked correctly.
 *  Navigate to "PublicIPofELK-Server:5601" to check that the ELK server is running correctly.
 
