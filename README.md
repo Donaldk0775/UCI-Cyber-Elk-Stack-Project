@@ -2,7 +2,7 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-![My Network Diagram](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/raw/master/Elk%20Stack%20Project/Images/My%20Network%20Diagram.jpg)
+![My Network Diagram](https://github.com/Donaldk0775/UCI-Cyber-Elk-Stack-Project/blob/main/Images/My%20Network%20Diagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml playbook file may be used to install only certain pieces of it, such as Filebeat.
 We will need [filebeat-playbook.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible-Playbooks/filebeat-playbook.yml) and [elk.yml](https://uci.bootcampcontent.com/Donaldk0775/donald-ko-my-homework/blob/master/Elk%20Stack%20Project/Ansible-Playbooks/elk.yml) to create the Elk-Server.
